@@ -1,0 +1,27 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/id_ll_activity_group"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/id_girdview"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/id_girdview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:cacheColorHint="@android:color/transparent"
+        android:gravity="center"
+        
+        android:numColumns="3"
+        android:verticalSpacing="0dp"
+        android:listSelector="@android:color/holo_orange_dark" />
+
+</RelativeLayout>

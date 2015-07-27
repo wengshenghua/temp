@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res/com.coolweather.app"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp" >
+
+        <com.coolweather.app.model.Topbar
+            android:id="@+id/id_topbar_weatherfragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            custom:leftBackground="@drawable/city_btn"
+            custom:rightBackground="@drawable/editor"
+            custom:title="城市名字"
+            custom:titleTextColor="#123412"
+            custom:titleTextSize="8sp" >
+        </com.coolweather.app.model.Topbar>
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/id_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </android.support.v4.view.ViewPager>
+
+</LinearLayout>
